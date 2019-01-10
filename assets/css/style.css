@@ -1,6 +1,51 @@
+.container {
+  max-width: 991px;
+}
+.separator-left {
+  border-left: 1px solid #d0cece;
+  border-radius: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 body {
-  position: relative;
-  widows: 100;
-  width: 100px;
-  
+  background-color: #eaeaea;
+  font-family: 'Montserrat', sans-serif;
+}
+.section-top {
+  padding-top: 30px;
+}
+.img-logo {
+  width: 90px;
+}
+.contact {
+  text-align: right;
+  color: #3e4347;
+}
+.contact .text {
+  display: inline-block;
+  font-size: 13px;
+}
+.contact .text .small {
+  display: block;
+}
+
+.section-investment {
+  padding-top: 30px;
+}
+.section-investment h2 {
+  font-size: 60px;
+  letter-spacing: -1px;
+  line-height: 60px;
+  color: #3e4347;
+  font-weight: bold;
+}
+
+.invert-orange {
+  font-size: 20px;
+line-height: 60px;
+color: #eaeaea;
+font-family: "Montserrat";
+font-weight: bold;
+background-color: #fd9c3a;
+padding: 0 5px;
 }

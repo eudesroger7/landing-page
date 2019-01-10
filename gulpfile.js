@@ -8,6 +8,7 @@ var rename = require('gulp-rename');
 var csso = require('gulp-csso');
 var clean = require('gulp-clean');
 var runSequence = require('run-sequence');
+var watch = require('gulp-watch');
 
 var paths = {
   libsStyles: [
