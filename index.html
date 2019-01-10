@@ -28,16 +28,121 @@
       </div>
       <div class="section-investment">
         <div class="row">
-          <div class="col-6">
+          <div class="col-7">
             <h2>SEJA NOSSO FRANQUEADO</h2>
             <span class="invert-orange">
               INVESTIMENTO
             </span>
+            <div class="row box-investment-info">
+              <p class="col-4">
+                Taxa de franquia:<br>
+                Lojas:<br>
+                <span class="text-orange">R$ 40.000,00</span>
+                Quiosques:<br>
+                <span class="text-orange">R$ 20.000,00</span>
+              </p>
+              <p class="col-4">
+                Investimento total (sem ponto comercial): entre <span class="text-orange">R$ 120.000,00</span> e <span class="text-orange">R$ 230.000,00</span>
+              </p>
+              <p class="col-4">
+                  Retorno previsto:<br> de <span class="text-orange">24</span> a <span class="text-orange">36</span> meses
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="col-5">
+              <div class="investment-carousel">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/img/sundaes.png" class="d-block">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/sundaes.png" class="d-block">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/sundaes.png" class="d-block">
+                      </div>
+                    </div>
+                  </div>
+                </div>
           </div>
         </div>
-      </div>  
+      </div>
+      <div class="section-diferentials">
+        <div class="row">
+          <div class="col-7">
+            <h3>TENHA UMA FRANQUIA FRISABOR!</h3>
+            <div class="box-diferential">
+              <h4>DIFERENCIAIS</h4>
+              <p>Experiência de 60 anos no segmento</p><hr>
+              <p>Mais de 30 sabores disponíveis</p><hr>
+              <p>Operacional simples</p><hr>
+              <p>Produtos com ingredientes de altíssima qualidade</p><hr>
+              <p>Mix que engloba sorvetes, picolés, deliciosas sobremesas e cafés</p><hr>
+              <p>Qualidade reconhecida</p>
+            </div>
+            <div class="box-diferential">
+                <h4>CONDIÇÕES</h4>
+                <p>Cidades com mais de 50 mil habitantes</p><hr>
+                <p>Lojas que cabem em ruas, galerias e shoppings (de 30m² a 40m²)</p><hr>
+                <p>Ser administrado pelo próprio franqueado (dedicação)</p>
+              </div>
+              <div class="box-diferential">
+                  <h4>SUPORTE AO FRANQUEADO</h4>
+                  <p>Direito de uso de Marca</p><hr>
+                  <p>Auxílio na análise e escolha do ponto comercial</p><hr>
+                  <p>Acompanhamento na montagem e inauguração da loja</p><hr>
+                  <p>Treinamento inicial de gestão de loja</p><hr>
+                  <p>Assistência à operação da franquia</p><hr>
+                  <p>Manual da Franquia</p><hr>
+                  <p>Apoio de Markenting</p><hr>
+                  <p>Consultoria de campo</p><hr>
+                  <p>Sistema gourmet de frente de loja</p><hr>
+                </div>
+          </div>
+          <div class="col-5 contact-form">
+            <h4 class="text-orange">PREENCHA O NOSSO FORMULÁRIO</h4>
+            <p>Um de nossos consultores entrará em contato com você.</p>
+            <form>
+              <div class="form-group">
+                  <input class="form-control" name="name" type="text" placeholder="seu Nome">
+                  <input class="form-control" name="email" type="email" placeholder="Seu E-mail">
+                  <input class="form-control" name="phone" type="text" placeholder="Seu Telefone">
+                  <input class="form-control" name="occuppation" type="text" placeholder="Profissão">
+                  <select class="form-control" name="investment_money">
+                    <option>Capital disponível para investimento</option>
+                    <option value="1000">R$ 1.000,00</option>
+                    <option value="2000">R$ 2.000,00</option>
+                    <option value="3000">R$ 3.000,00</option>
+                    <option value="4000">R$ 4.000,00</option>
+                    <option value="5000">R$ 5.000,00</option>
+                    <option value="6000">R$ 6.000,00</option>
+                    <option value="7000">R$ 7.000,00</option>
+                  </select>
+                  <input class="form-control" name="city" type="text" placeholder="Cidade">
+                  <input class="form-control" name="neighborhood" type="text" placeholder="Bairro">
+                  <textarea name="message" placeholder="Mesagem"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div> 
     </div>
     <script src="build/js/libs.min.js"></script>
     <script src="build/js/app.min.js"></script>
+    <script>
+      $('.carousel').carousel({
+        interval: 0,
+        ride: 'true',
+        touch: true
+      })
+    </script>
   </body>
 </html>
