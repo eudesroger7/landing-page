@@ -108,8 +108,46 @@ text-align: center;
   border-radius: 10px;
   margin: 10px 0;
   height: 45px;
+  border: none;
+  outline: none;
 }
 
+.contact-form input,
+.contact-form input::placeholder,
+.contact-form select,
+.contact-form .textarea,
+.contact-form .textarea::placeholder {
+  font-weight: bold;
+  color: #000;
+}
+.contact-form .c-select {
+  background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIW…+EJOEhkQB4JIFU4ZNzNSlOfa7IiqIoiqIoiqIoiqIoIfkLojJaf79ipB0AAAAASUVORK5CYII=) no-repeat right 0.75rem center;
+  background-size: 18px;
+  display: inline-block;
+  max-width: 100%;
+  padding-right: .75rem \9;
+  vertical-align: middle;
+  background-image: none \9;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.contact-form .textarea {
+  margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+}
+.contact-form .btn-submit {
+  border-radius: 64px;
+  width: 185px;
+  height: 50px;
+  background-color: #ffa500;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0 0 17px;
+}
 .invert-orange {
   font-size: 20px;
 line-height: 60px;
@@ -130,4 +168,23 @@ line-height: 34px;
 color: #3e4347;
 font-family: "Montserrat";
 font-weight: bold;
+}
+
+#map {
+  height: 500px;
+  max-width: 100%;
+}
+
+.footer {
+  height: 80px;
+  background-color: #3e4347;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.social i {
+  font-size: 16px;
+  margin: 0 5px;
 }

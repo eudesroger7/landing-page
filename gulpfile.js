@@ -5,7 +5,6 @@ var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
-var csso = require('gulp-csso');
 var clean = require('gulp-clean');
 var runSequence = require('run-sequence');
 var watch = require('gulp-watch');
