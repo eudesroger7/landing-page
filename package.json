@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "build": "gulp clean && gulp libs-scripts && gulp scripts && gulp libs-styles && gulp styles"
+    "build": "gulp clean && gulp libs-scripts && gulp scripts && gulp libs-styles && gulp styles && gulp fonts"
   },
   "author": "Eudes Roger",
   "license": "ISC",

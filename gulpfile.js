@@ -24,6 +24,9 @@ var paths = {
   ],
   scripts: [
     'assets/js/validation.js'
+  ],
+  fonts: [
+    'assets/fonts/*'
   ]
 }
 
@@ -69,3 +72,8 @@ gulp.task('scripts', function() {
     .pipe(uglify())
     .pipe(gulp.dest('build/js/'))
 });
+
+gulp.task('fonts', function() {
+  return gulp.src(paths.fonts)
+    .pipe(gulp.dest('build/fonts/'))
+})
