@@ -9,6 +9,8 @@ h3 {
   color: #3e4347;
   font-family: "Montserrat";
   font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
 h4 {
   font-size: 22px;
@@ -34,6 +36,8 @@ body {
   background-color: #eaeaea;
   font-family: 'Montserrat', sans-serif;
   color: #3e4347;
+  font-weight: 500;
+
 }
 .section-top {
   padding-top: 30px;
@@ -49,44 +53,45 @@ body {
   right: 0;
   display: flex;
   align-items: center;
+  line-height: 15px;
 }
 .contact .text {
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
 }
 .contact .text .small {
   display: block;
+  font-size: 9px;
+  font-weight: bold;
+}
+.contact i {
+  font-size: 20px;
 }
 
 .section-investment {
   padding-top: 30px;
 }
-/* .section-investment h2 {
-  font-size: 60px;
-  letter-spacing: -1px;
-  line-height: 60px;
-  color: #3e4347;
-  font-weight: bold;
-} */
 .box-investment-info {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   color: #3e4347;
   padding: 15px 0;
+  display: flex;
 }
 .box-investment-info span {
   display: inline-block;
 }
 .box-investment-info .item {
   display: inline-block;
-  width: 30%;
+  width: 27.5%;
 }
 .box-investment-info .item.separator {
-  width: 40%;
+  width: 39%;
   border-left: 1px solid #d0cece;
   border-right: 1px solid #d0cece;
-  margin-right: 20px;
-  padding: 0 20px;
+  margin-right: 3%;
+  padding: 0 3%;
 }
 .investment-carousel {
   position: absolute;
@@ -110,19 +115,11 @@ body {
   padding-top: 30px;
 }
 .box-diferential {
-  padding: 20px 0;
+  margin-bottom: 50px;
 }
 .box-diferential .icon {
   height: 40px;
 }
-/* .box-diferential h4 {
-  font-size: 22px;
-  line-height: 40px;
-  color: #3e4347;
-  font-family: "Montserrat";
-  font-weight: bold;
-  margin-bottom: 20px;
-} */
 .box-diferential p {
   font-size: 16px;
   line-height: 40px;
@@ -130,22 +127,16 @@ body {
   font-family: "Montserrat";
   margin: -15px 0;
 }
-
-/* .contact-form h4 {
-  font-size: 23px;
-letter-spacing: -1px;
-line-height: 34px;
-color: #f9b03a;
-font-family: "Montserrat";
-font-weight: bold;
-text-align: center;
-} */
 .contact-form p {
   font-size: 15px;
-line-height: 34px;
-color: #3e4347;
-font-family: "Montserrat";
-text-align: center;
+  line-height: 34px;
+  color: #3e4347;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.contact-form h4 {
+  margin-bottom: 0;
+  text-align: center;
 }
 .contact-form .form-control {
   border-radius: 10px;
@@ -158,18 +149,18 @@ text-align: center;
 .contact-form textarea {
   padding: 10px 22px;
   font-weight: bold;
-  color: #000;
+  color: #3e4347;
 }
 .contact-form input::placeholder,
 .contact-form select,
 .contact-form .textarea,
 .contact-form .textarea::placeholder {
   font-weight: bold;
-  color: #000;
+  color: #3e4347;
 }
 .contact-form .c-select {
-  background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIW…+EJOEhkQB4JIFU4ZNzNSlOfa7IiqIoiqIoiqIoiqIoIfkLojJaf79ipB0AAAAASUVORK5CYII=) no-repeat right 0.75rem center;
-  background-size: 18px;
+  background: #fff url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDQ1MS44NDcgNDUxLjg0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUxLjg0NyA0NTEuODQ3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTIyNS45MjMsMzU0LjcwNmMtOC4wOTgsMC0xNi4xOTUtMy4wOTItMjIuMzY5LTkuMjYzTDkuMjcsMTUxLjE1N2MtMTIuMzU5LTEyLjM1OS0xMi4zNTktMzIuMzk3LDAtNDQuNzUxICAgYzEyLjM1NC0xMi4zNTQsMzIuMzg4LTEyLjM1NCw0NC43NDgsMGwxNzEuOTA1LDE3MS45MTVsMTcxLjkwNi0xNzEuOTA5YzEyLjM1OS0xMi4zNTQsMzIuMzkxLTEyLjM1NCw0NC43NDQsMCAgIGMxMi4zNjUsMTIuMzU0LDEyLjM2NSwzMi4zOTIsMCw0NC43NTFMMjQ4LjI5MiwzNDUuNDQ5QzI0Mi4xMTUsMzUxLjYyMSwyMzQuMDE4LDM1NC43MDYsMjI1LjkyMywzNTQuNzA2eiIgZmlsbD0iIzNlNDM0NyIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=) no-repeat right 22px center;
+  background-size: 15px;
   display: inline-block;
   max-width: 100%;
   padding-right: .75rem \9;
@@ -183,6 +174,7 @@ text-align: center;
   margin-top: 10px;
     margin-bottom: 10px;
     height: 100px;
+    resize: none;
 }
 .contact-form .btn-submit {
   border-radius: 64px;
@@ -226,7 +218,7 @@ padding: 0 5px;
   font-size: 12px;
 }
 
-.social i {
+.social a {
   font-size: 16px;
   margin: 0 5px;
   color: #fff;
