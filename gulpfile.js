@@ -7,6 +7,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
 var watch = require('gulp-watch');
+var run = require('gulp-run');
 
 var paths = {
   libsStyles: [
@@ -79,3 +80,10 @@ gulp.task('fonts', function() {
   return gulp.src(paths.fonts)
     .pipe(gulp.dest('build/fonts/'))
 })
+
+gulp.task('watch', function(){
+  gulp.watch(paths.styles, gulp.series('styles'));
+  gulp.watch(paths.scripts, gulp.series('scripts'));
+})
+
+gulp.task('default', gulp.series('clean', 'libs-styles', 'styles', 'libs-scripts', 'scripts', 'fonts'));

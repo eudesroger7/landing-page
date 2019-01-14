@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "build": "gulp clean && gulp libs-scripts && gulp scripts && gulp libs-styles && gulp styles && gulp fonts"
+    "build": "gulp",
+    "dev": "gulp && gulp watch"
   },
   "author": "Eudes Roger",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.4.0",
+    "gulp-run": "^1.7.1",
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
     "jquery-mask-plugin": "^1.14.15",
