@@ -6,27 +6,26 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
-var runSequence = require('run-sequence');
 var watch = require('gulp-watch');
 
 var paths = {
   libsStyles: [
-    'assets/css/animate.css',
-    'assets/css/bootstrap.css',
-    'assets/css/font-awesome.css'
+    'node_modules/bootstrap/dist/css/bootstrap.css',
+    'node_modules/font-awesome/css/font-awesome.css'
   ],
   styles: [
     'assets/css/style.css'
   ],
   libsScripts: [
-    'assets/js/jquery.js',
-    'assets/js/bootstrap.js'
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/jquery-validation/dist/jquery.validate.js',
+    'node_modules/bootstrap/dist/js/bootstrap.js'
   ],
   scripts: [
     'assets/js/validation.js'
   ],
   fonts: [
-    'assets/fonts/*'
+    'node_modules/font-awesome/fonts/*'
   ]
 }
 

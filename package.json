@@ -8,6 +8,8 @@
   "author": "Eudes Roger",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.2.1",
+    "font-awesome": "^4.7.0",
     "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
