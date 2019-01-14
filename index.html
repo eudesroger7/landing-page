@@ -6,7 +6,7 @@
     <title>Sorvetes Frisabor</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="build/css/libs.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="build/css/app.min.css">
   </head>
   <body>
     <!-- <div class="container"> -->
@@ -116,7 +116,7 @@
                         <input class="form-control" id="name" name="name" type="text" placeholder="seu Nome" required>
                         <input class="form-control" id="email" name="email" type="email" placeholder="Seu E-mail" required>
                         <input class="form-control" id="phone" name="phone" type="text" placeholder="Seu Telefone" required>
-                        <input class="form-control" id="occuppation" name="occuppation" type="text" placeholder="Profissão" required>
+                        <input class="form-control" id="occupation" name="occupation" type="text" placeholder="Profissão" required>
                         <select class="form-control c-select" id="" name="investment_money" required>
                           <option value="">Capital disponível para investimento</option>
                           <option value="1000">R$ 1.000,00</option>
@@ -155,23 +155,8 @@
         </div>
       </div>
     </div>
-    <script src="build/js/libs.min.js"></script>
-    <script src="assets/js/validation.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA20RPFgqDmOThbFw6JUZLutGtbJKv5fVw&callback=initMap" async defer></script>
-    <script>
-      $('.carousel').carousel({
-        interval: 0,
-        ride: 'true',
-        touch: true
-      })
-
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
+    <script src="build/js/libs.min.js"></script>
+    <script src="build/js/app.min.js"></script>
   </body>
 </html>

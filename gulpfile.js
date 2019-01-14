@@ -11,17 +11,20 @@ var watch = require('gulp-watch');
 var paths = {
   libsStyles: [
     'node_modules/bootstrap/dist/css/bootstrap.css',
-    'node_modules/font-awesome/css/font-awesome.css'
+    'node_modules/font-awesome/css/font-awesome.css',
+    'node_modules/toastr/build/toastr.css'
   ],
   styles: [
     'assets/css/style.css'
   ],
   libsScripts: [
     'node_modules/jquery/dist/jquery.js',
-    'node_modules/jquery-validation/dist/jquery.validate.js',
-    'node_modules/bootstrap/dist/js/bootstrap.js'
+    'node_modules/jquery-mask-plugin/dist/jquery.mask.js',
+    'node_modules/bootstrap/dist/js/bootstrap.js',
+    'node_modules/toastr/toastr.js'
   ],
   scripts: [
+    'assets/js/initialize.js',
     'assets/js/validation.js'
   ],
   fonts: [
