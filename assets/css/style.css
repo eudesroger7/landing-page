@@ -44,6 +44,7 @@ body {
 }
 .img-logo {
   width: 90px;
+  height: 100%;
 }
 .contact {
   text-align: right;
@@ -222,4 +223,11 @@ padding: 0 5px;
   font-size: 16px;
   margin: 0 5px;
   color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .investment-carousel {
+    position: relative;
+    top: 0;
+  }
 }

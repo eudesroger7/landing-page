@@ -20,8 +20,7 @@ var paths = {
   ],
   libsScripts: [
     'assets/js/jquery.js',
-    'assets/js/jquery.validate.js',
-    'assets/js/bootstrap.js',
+    'assets/js/bootstrap.js'
   ],
   scripts: [
     'assets/js/validation.js'
