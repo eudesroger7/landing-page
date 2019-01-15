@@ -4,10 +4,9 @@ var gulp = require('gulp');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var rename = require('gulp-rename');
 var clean = require('gulp-clean');
-var watch = require('gulp-watch');
-var run = require('gulp-run');
+var htmlmin = require('gulp-htmlmin');
+var imagemin = require('gulp-imagemin');
 
 var paths = {
   libsStyles: [
@@ -30,6 +29,12 @@ var paths = {
   ],
   fonts: [
     'node_modules/font-awesome/fonts/*'
+  ],
+  htmls: [
+    'index.html'
+  ],
+  images: [
+    'assets/img/*'
   ]
 }
 
@@ -79,11 +84,24 @@ gulp.task('scripts', function() {
 gulp.task('fonts', function() {
   return gulp.src(paths.fonts)
     .pipe(gulp.dest('build/fonts/'))
-})
+});
+
+gulp.task('htmls', function() {
+  return gulp.src(paths.htmls)
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build/'))
+});
+
+gulp.task('images', function(){
+  return gulp.src(paths.images)
+    .pipe(imagemin())
+    .pipe(gulp.dest('build/img/'))
+});
 
 gulp.task('watch', function(){
   gulp.watch(paths.styles, gulp.series('styles'));
   gulp.watch(paths.scripts, gulp.series('scripts'));
-})
+  gulp.watch(paths.htmls, gulp.series('htmls'));
+});
 
-gulp.task('default', gulp.series('clean', 'libs-styles', 'styles', 'libs-scripts', 'scripts', 'fonts'));
+gulp.task('default', gulp.series('clean', 'libs-styles', 'styles', 'libs-scripts', 'scripts', 'fonts', 'htmls', 'images'));

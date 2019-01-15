@@ -21,47 +21,57 @@ function submitForm() {
 
   if(name.value === "") {
     toastr['warning']('O campo nome é obrigatório!');
+    name.focus();
     return false; 
   }
 
   if(email.value === "") {
     toastr['warning']('O campo email é obrigatório!');
+    email.focus();
     return false; 
   } else if(!validateEmail(email.value)) {
     toastr['warning']('Digite um email válido!');
+    email.focus();
     return false;
   }
 
   if(phone.value === "") {
     toastr['warning']('O campo telefone é obrigatório!');
+    phone.focus();
     return false; 
   } else if(!validatePhone(phone.value)) {
     toastr['warning']('Digite um telefone válido!');
+    phone.focus();
     return false;
   }
   
   if(occupation.value === "") {
     toastr['warning']('O campo profissão é obrigatório!');
+    occupation.focus();
     return false; 
   }
 
   if(investment_money.value === "") {
     toastr['warning']('O campo Capital para investimento é obrigatório!');
+    investment_money.focus();
     return false; 
   }
 
   if(city.value === "") {
     toastr['warning']('O campo cidade é obrigatório!');
+    city.focus();
     return false; 
   }
 
   if(neighborhood.value === "") {
     toastr['warning']('O campo bairro é obrigatório!');
+    neighborhood.focus();
     return false; 
   }
   
   if(message.value === "") {
     toastr['warning']('O campo mensagem é obrigatório!');
+    message.focus();
     return false; 
   }
 
