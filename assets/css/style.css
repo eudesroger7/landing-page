@@ -272,4 +272,10 @@ h4 {
     border-top: 1px solid #d0cece;
     border-bottom: 1px solid #d0cece;
   }
+  .contact-form input::placeholder,
+  .contact-form .textarea,
+  .contact-form select,
+  .contact-form .textarea::placeholder {
+    font-size: 3.7vw;
+  }
 }
