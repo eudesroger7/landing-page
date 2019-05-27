@@ -87,4 +87,7 @@ function submitForm() {
   };
 
   toastr['success']('Formulário enviado com sucesso!');
+  setTimeout(function() {
+    window.location.reload();
+  }, 2000);
 };
